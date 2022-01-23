@@ -466,7 +466,7 @@ template {
 }
 
 .top_container {
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 
 .top_iamge {
@@ -485,7 +485,7 @@ template {
           justify-content: center;
   width: 100%;
   padding: 80px 150px;
-  background: #565B66;
+  background: #565b66;
 }
 
 .works_section .works_contaier {
@@ -542,6 +542,26 @@ template {
   .works_section p {
     margin-bottom: 80px;
   }
+}
+
+.about_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 80px 150px;
+  background: #3f424a;
+}
+
+.about_section .about_container {
+  width: 79.167vw;
+  height: 546px;
+  color: #e3e3e3;
+}
+
+.about_section .about_container .about_title {
+  font-size: 80px;
 }
 
 .navbar_containar {
