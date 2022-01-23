@@ -11,21 +11,21 @@
 .works_section {
   display: flex;
   justify-content: center;
-
   width: 100%;
-  height: 100vh;
+  padding: 80px 150px;
   background: #565B66;
 
   .works_contaier {
-    margin-top: 160px;
     width: 79.167vw;
-    height: 600px;
     // background: #000;
     // コンテナサイズのチェック用
 
     .works_title {
       font-size: 80px;
       text-align: center;
+      @include mq-down(sm) {
+        font-size: 64px;
+        }
     }
 
     .works_image-section {
@@ -34,13 +34,22 @@
       margin-top: 88px;
       text-align: center;
       font-size: 32px;
+      @include mq-down(lg) {
+        flex-direction: column;
+        }
     }
   }
   img{
     max-width: 350px;
     width: 100%;
+    @include mq-down(lg) {
+      max-width: 400px;
+      }
   }
   p{
     margin-top: 16px;
+    @include mq-down(lg) {
+      margin-bottom: 80px;
+      }
   }
 }

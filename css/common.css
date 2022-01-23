@@ -484,19 +484,23 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100vh;
+  padding: 80px 150px;
   background: #565B66;
 }
 
 .works_section .works_contaier {
-  margin-top: 160px;
   width: 79.167vw;
-  height: 600px;
 }
 
 .works_section .works_contaier .works_title {
   font-size: 80px;
   text-align: center;
+}
+
+@media screen and (max-width: 543px) {
+  .works_section .works_contaier .works_title {
+    font-size: 64px;
+  }
 }
 
 .works_section .works_contaier .works_image-section {
@@ -510,13 +514,34 @@ template {
   font-size: 32px;
 }
 
+@media screen and (max-width: 1023px) {
+  .works_section .works_contaier .works_image-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .works_section img {
   max-width: 350px;
   width: 100%;
 }
 
+@media screen and (max-width: 1023px) {
+  .works_section img {
+    max-width: 400px;
+  }
+}
+
 .works_section p {
   margin-top: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .works_section p {
+    margin-bottom: 80px;
+  }
 }
 
 .navbar_containar {
