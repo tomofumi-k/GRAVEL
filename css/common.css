@@ -483,16 +483,17 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100vh;
   background: #565B66;
 }
 
 .works_section .works_contaier {
-  margin-top: 120px;
   width: 79.167vw;
   height: 600px;
-  background: #000;
 }
 
 .works_section .works_contaier .works_title {
@@ -507,6 +508,8 @@ template {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 88px;
+  text-align: center;
+  font-size: 32px;
 }
 
 .navbar_containar {
