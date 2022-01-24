@@ -484,7 +484,7 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 80px 150px;
+  padding: 160px 150px;
   background: #565b66;
 }
 
@@ -553,7 +553,7 @@ template {
           justify-content: center;
   text-align: center;
   width: 100%;
-  padding: 80px 150px;
+  padding: 160px 150px;
   background: #3f424a;
 }
 
@@ -562,8 +562,20 @@ template {
   color: #e3e3e3;
 }
 
+@media screen and (max-width: 767px) {
+  .about_section .about_container {
+    height: 660px;
+  }
+}
+
 .about_section .about_container .about_title {
   font-size: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_title {
+    font-size: 60px;
+  }
 }
 
 .about_section .about_container .about_topic {
@@ -573,25 +585,64 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+  }
 }
 
 .about_section .about_container .about_topic .about_textsection {
   width: 358px;
-  margin-right: 100px;
+  margin-right: calc(60px + 20 * (100vw - 768px) / 172);
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_textsection {
+    margin-right: 0px;
+  }
 }
 
 .about_section .about_container .about_topic .about_textsection .about_text-titile {
   font-size: 32px;
-  padding: 24px 0px 42px 0px;
+  padding: 42px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_textsection .about_text-titile {
+    padding: 42px 0px 16px 0px;
+  }
 }
 
 .about_section .about_container .about_topic .about_textsection .about_text-space {
   padding-top: 42px;
 }
 
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_textsection .about_text-space {
+    padding-top: 16px;
+  }
+}
+
 .about_section .about_container .about_topic .about_image {
   max-width: 350px;
+  width: calc(300px + 50 * (100vw - 768px) / 172);
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_image {
+    margin-top: 80px;
+    width: 350px;
+  }
 }
 
 .navbar_containar {

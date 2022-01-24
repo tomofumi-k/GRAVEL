@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 80px 150px;
+  padding: 160px 150px;
   background: #565b66;
 
   .works_contaier {
@@ -53,43 +53,69 @@
     }
   }
 }
+
 .about_section {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 100%;
-  padding: 80px 150px;
+  padding: 160px 150px;
   background: #3f424a;
 
   .about_container {
     height: 546px;
     color: #e3e3e3;
+    @include mq-down(md) {
+      height: 660px;
+    }
 
     .about_title {
       font-size: 80px;
+      @include mq-down(md) {
+        font-size: 60px;
+      }
     }
 
     .about_topic {
       display: flex;
       justify-content: center;
-      margin-top: 80px;
+      margin-top: 120px;
+      @include mq-down(md) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+      }
 
       .about_textsection {
         width: 358px;
-        margin-right: 100px;
+        margin-right: calc(60px + 20 * (100vw - 768px) / 172);
+        @include mq-down(md) {
+          margin-right: 0px;
+        }
 
         .about_text-titile {
           font-size: 32px;
-          padding: 24px 0px 42px 0px;
+          padding: 42px 0px;
+          @include mq-down(md) {
+            padding: 42px 0px 16px 0px;
+          }
         }
 
         .about_text-space {
           padding-top: 42px;
+          @include mq-down(md) {
+            padding-top: 16px;
+          }
         }
       }
 
       .about_image {
         max-width: 350px;
+        width: calc(300px + 50 * (100vw - 768px) / 172);
+        @include mq-down(md) {
+          margin-top: 80px;
+          width: 350px;
+        }
       }
     }
   }
