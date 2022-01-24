@@ -548,6 +548,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   width: 100%;
   padding: 80px 150px;
@@ -555,13 +558,40 @@ template {
 }
 
 .about_section .about_container {
-  width: 79.167vw;
   height: 546px;
   color: #e3e3e3;
 }
 
 .about_section .about_container .about_title {
   font-size: 80px;
+}
+
+.about_section .about_container .about_topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.about_section .about_container .about_topic .about_textsection {
+  width: 358px;
+  margin-right: 100px;
+}
+
+.about_section .about_container .about_topic .about_textsection .about_text-titile {
+  font-size: 32px;
+  padding: 24px 0px 42px 0px;
+}
+
+.about_section .about_container .about_topic .about_textsection .about_text-space {
+  padding-top: 42px;
+}
+
+.about_section .about_container .about_topic .about_image {
+  max-width: 350px;
 }
 
 .navbar_containar {

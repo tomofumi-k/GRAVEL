@@ -55,19 +55,42 @@
 }
 .about_section {
   display: flex;
+  justify-content: center;
   text-align: center;
   width: 100%;
   padding: 80px 150px;
   background: #3f424a;
 
   .about_container {
-    width: 79.167vw;
     height: 546px;
     color: #e3e3e3;
+
     .about_title {
       font-size: 80px;
     }
-    .about_textsection {
+
+    .about_topic {
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+
+      .about_textsection {
+        width: 358px;
+        margin-right: 100px;
+
+        .about_text-titile {
+          font-size: 32px;
+          padding: 24px 0px 42px 0px;
+        }
+
+        .about_text-space {
+          padding-top: 42px;
+        }
+      }
+
+      .about_image {
+        max-width: 350px;
+      }
     }
   }
 }
