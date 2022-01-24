@@ -1,19 +1,19 @@
 .top_container {
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 
-  .top_iamge {
-    width: 100%;
-    margin-top: 50px;
-    object-fit: fill;
-  }
+.top_iamge {
+  width: 100%;
+  margin-top: 50px;
+  object-fit: fill;
+}
 
 .works_section {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 80px 150px;
-  background: #565B66;
+  padding: 160px 150px;
+  background: #565b66;
 
   .works_contaier {
     width: 79.167vw;
@@ -25,7 +25,7 @@
       text-align: center;
       @include mq-down(sm) {
         font-size: 64px;
-        }
+      }
     }
 
     .works_image-section {
@@ -36,20 +36,87 @@
       font-size: 32px;
       @include mq-down(lg) {
         flex-direction: column;
-        }
+      }
     }
   }
-  img{
+  img {
     max-width: 350px;
     width: 100%;
     @include mq-down(lg) {
       max-width: 400px;
-      }
+    }
   }
-  p{
+  p {
     margin-top: 16px;
     @include mq-down(lg) {
       margin-bottom: 80px;
+    }
+  }
+}
+
+.about_section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 160px 150px;
+  background: #3f424a;
+
+  .about_container {
+    height: 546px;
+    color: #e3e3e3;
+    @include mq-down(md) {
+      height: 660px;
+    }
+
+    .about_title {
+      font-size: 80px;
+      @include mq-down(md) {
+        font-size: 60px;
       }
+    }
+
+    .about_topic {
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+      @include mq-down(md) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+      }
+
+      .about_textsection {
+        width: 358px;
+        margin-right: calc(60px + 20 * (100vw - 768px) / 172);
+        @include mq-down(md) {
+          margin-right: 0px;
+        }
+
+        .about_text-titile {
+          font-size: 32px;
+          padding: 42px 0px;
+          @include mq-down(md) {
+            padding: 42px 0px 16px 0px;
+          }
+        }
+
+        .about_text-space {
+          padding-top: 42px;
+          @include mq-down(md) {
+            padding-top: 16px;
+          }
+        }
+      }
+
+      .about_image {
+        max-width: 350px;
+        width: calc(300px + 50 * (100vw - 768px) / 172);
+        @include mq-down(md) {
+          margin-top: 80px;
+          width: 350px;
+        }
+      }
+    }
   }
 }
