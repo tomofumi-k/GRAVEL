@@ -120,3 +120,22 @@
     }
   }
 }
+
+.info_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #565b66;
+
+  .info_section-container {
+    padding: 160px 150px;
+
+    .info_section-title {
+      color: white;
+      font-size: 80px;
+      padding-bottom: 88px;
+      text-align: center;
+    }
+  }
+}

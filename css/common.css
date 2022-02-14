@@ -645,6 +645,31 @@ template {
   }
 }
 
+.info_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: #565b66;
+}
+
+.info_section .info_section-container {
+  padding: 160px 150px;
+}
+
+.info_section .info_section-container .info_section-title {
+  color: white;
+  font-size: 80px;
+  padding-bottom: 88px;
+  text-align: center;
+}
+
 .navbar_containar {
   display: -webkit-box;
   display: -ms-flexbox;
