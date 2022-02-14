@@ -624,7 +624,8 @@ template {
 }
 
 .about_section .about_container .about_topic .about_textsection .about_text-space {
-  padding-top: 42px;
+  padding-top: 36px;
+  padding-bottom: 12px;
 }
 
 @media screen and (max-width: 767px) {
@@ -660,13 +661,60 @@ template {
 }
 
 .info_section .info_section-container {
-  padding: 160px 150px;
+  padding: 160px 0px;
 }
 
 .info_section .info_section-container .info_section-title {
   color: white;
   font-size: 80px;
   padding-bottom: 88px;
+  text-align: center;
+}
+
+.footer_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 40px 0px;
+  background: #3f424a;
+}
+
+.footer_section .footer_section_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 40px 0px;
+}
+
+.footer_section .footer_section_container .footer_page-name {
+  margin-bottom: 70px;
+}
+
+.footer_section .footer_section_container .sns_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.footer_section .footer_section_container .footer_copylight {
+  color: white;
   text-align: center;
 }
 
