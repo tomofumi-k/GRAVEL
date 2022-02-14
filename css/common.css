@@ -733,13 +733,12 @@ template {
 }
 
 .navbar_containar .navbar_title {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 8px 0px 8px 16px;
+  height: 42px;
+  padding: 5px 0px 8px 14px;
 }
 
 .navbar_containar .navbar_section-button {
-  padding: 14px 40px 14px 0px;
+  padding: 14px 14px 14px 0px;
   font-size: 16px;
 }
 

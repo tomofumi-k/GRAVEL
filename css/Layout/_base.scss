@@ -17,8 +17,6 @@
 
   .works_contaier {
     width: 79.167vw;
-    // background: #000;
-    // コンテナサイズのチェック用
 
     .works_title {
       font-size: 80px;
@@ -68,7 +66,6 @@
     @include mq-down(md) {
       height: 660px;
     }
-
     .about_title {
       font-size: 80px;
       @include mq-down(md) {
@@ -85,14 +82,12 @@
         align-items: center;
         margin-top: 0px;
       }
-
       .about_textsection {
         width: 358px;
         margin-right: calc(60px + 20 * (100vw - 768px) / 172);
         @include mq-down(md) {
           margin-right: 0px;
         }
-
         .about_text-titile {
           font-size: 32px;
           padding: 42px 0px;
@@ -100,7 +95,6 @@
             padding: 42px 0px 16px 0px;
           }
         }
-
         .about_text-space {
           padding-top: 36px;
           padding-bottom: 12px;
@@ -109,7 +103,6 @@
           }
         }
       }
-
       .about_image {
         max-width: 350px;
         width: calc(300px + 50 * (100vw - 768px) / 172);
@@ -158,13 +151,11 @@
     .footer_page-name {
       margin-bottom: 70px;
     }
-
     .sns_container {
       display: flex;
       justify-content: space-between;
       margin-bottom: 36px;
     }
-
     .footer_copylight {
       color: white;
       text-align: center;
