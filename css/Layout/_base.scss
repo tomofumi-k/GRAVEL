@@ -1,5 +1,5 @@
 .top_container {
-  color: #e3e3e3;
+  color: white;
 }
 
 .top_iamge {
@@ -13,7 +13,7 @@
   justify-content: center;
   width: 100%;
   padding: 160px 150px;
-  background: #565b66;
+  background: $bg-gray;
 
   .works_contaier {
     width: 79.167vw;
@@ -58,11 +58,11 @@
   text-align: center;
   width: 100%;
   padding: 160px 150px;
-  background: #3f424a;
+  background: $bg-bark;
 
   .about_container {
     height: 546px;
-    color: #e3e3e3;
+    color: white;
     @include mq-down(md) {
       height: 660px;
     }
@@ -120,7 +120,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #565b66;
+  background: $bg-gray;
 
   .info_section-container {
     padding: 160px 0px;
@@ -140,7 +140,7 @@
   align-items: center;
   width: 100%;
   padding: 40px 0px;
-  background: #3f424a;
+  background: $bg-bark;
 
   .footer_section_container {
     display: flex;
