@@ -55,8 +55,8 @@
 
 .about_section {
   display: flex;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
   width: 100%;
   padding: 160px 150px;
   background: $bg-bark;
@@ -74,43 +74,39 @@
         font-size: 60px;
       }
     }
-
     .about_topic {
       display: flex;
       justify-content: center;
+      align-items: center;
       margin-top: 120px;
       @include mq-down(md) {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         margin-top: 0px;
       }
-      .about_textsection {
-        width: 358px;
-        margin-right: calc(60px + 20 * (100vw - 768px) / 172);
-        @include mq-down(md) {
-          margin-right: 0px;
-        }
-        .about_text-titile {
-          font-size: 32px;
-          padding: 42px 0px;
-          @include mq-down(md) {
-            padding: 42px 0px 16px 0px;
-          }
-        }
-        .about_text-space {
-          padding-top: 36px;
-          padding-bottom: 12px;
-          @include mq-down(md) {
-            padding-top: 16px;
-          }
-        }
-      }
       .about_image {
-        max-width: 350px;
+        max-width: 300px;
         width: calc(300px + 50 * (100vw - 768px) / 172);
         @include mq-down(md) {
           margin-top: 80px;
           width: 350px;
+        }
+      }
+
+      .about_textsection {
+        font-size: 20px;
+        font-family: "源柔ゴシック";
+        width: 560px;
+        text-align: left;
+        margin-left: 80px;
+        @include mq-down(md) {
+          margin-right: 0px;
+          margin-top: 80px;
+          text-align: center;
+        }
+        .about-space {
+          margin-bottom: 12px;
+          line-height: 30px;
         }
       }
     }

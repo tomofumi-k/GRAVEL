@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -549,10 +550,10 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   width: 100%;
   padding: 160px 150px;
   background: #3f424a;
@@ -587,15 +588,18 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 120px;
 }
 
 @media screen and (max-width: 767px) {
   .about_section .about_container .about_topic {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -603,41 +607,8 @@ template {
   }
 }
 
-.about_section .about_container .about_topic .about_textsection {
-  width: 358px;
-  margin-right: calc(60px + 20 * (100vw - 768px) / 172);
-}
-
-@media screen and (max-width: 767px) {
-  .about_section .about_container .about_topic .about_textsection {
-    margin-right: 0px;
-  }
-}
-
-.about_section .about_container .about_topic .about_textsection .about_text-titile {
-  font-size: 32px;
-  padding: 42px 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .about_section .about_container .about_topic .about_textsection .about_text-titile {
-    padding: 42px 0px 16px 0px;
-  }
-}
-
-.about_section .about_container .about_topic .about_textsection .about_text-space {
-  padding-top: 36px;
-  padding-bottom: 12px;
-}
-
-@media screen and (max-width: 767px) {
-  .about_section .about_container .about_topic .about_textsection .about_text-space {
-    padding-top: 16px;
-  }
-}
-
 .about_section .about_container .about_topic .about_image {
-  max-width: 350px;
+  max-width: 300px;
   width: calc(300px + 50 * (100vw - 768px) / 172);
 }
 
@@ -646,6 +617,27 @@ template {
     margin-top: 80px;
     width: 350px;
   }
+}
+
+.about_section .about_container .about_topic .about_textsection {
+  font-size: 20px;
+  font-family: "源柔ゴシック";
+  width: 560px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_textsection {
+    margin-right: 0px;
+    margin-top: 80px;
+    text-align: center;
+  }
+}
+
+.about_section .about_container .about_topic .about_textsection .about-space {
+  margin-bottom: 12px;
+  line-height: 30px;
 }
 
 .info_section {
