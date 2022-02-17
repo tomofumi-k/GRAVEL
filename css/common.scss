@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 // Foundation
-@import './Foundation/base/destyle';
-@import './Foundation/mixin/breakpoint';
-@import './Foundation/mixin/colors';
-@import './Foundation/variables/variables';
+@import "./Foundation/base/destyle";
+@import "./Foundation/mixin/breakpoint";
+@import "./Foundation/mixin/colors";
 
 // Layout
-@import './Layout/base';
-@import './Layout/navbar';
+@import "./Layout/base";
+@import "./Layout/navbar";
 
 // Object
 
