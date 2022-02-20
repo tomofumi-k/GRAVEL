@@ -12,9 +12,12 @@
 .works_section {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 160px 150px;
+
+  padding: 160px 0px;
   background: $bg-gray;
+  @include mq-down(md) {
+    padding: 80px 0px;
+  }
 
   .works_contaier {
     width: 79.167vw;
@@ -22,7 +25,7 @@
     .works_title {
       font-size: 80px;
       text-align: center;
-      @include mq-down(sm) {
+      @include mq-down(md) {
         font-size: 64px;
       }
     }
@@ -58,22 +61,23 @@
   text-align: center;
   justify-content: center;
   width: 100%;
-  padding: 160px 150px;
+  padding: 160px 0px;
   background: $bg-bark;
   font-family: "amboy-black", "sans-serif";
+  @include mq-down(md) {
+    padding: 80px 0px;
+  }
 
   .about_container {
-    height: 546px;
     color: white;
-    @include mq-down(md) {
-      height: 660px;
-    }
+
     .about_title {
       font-size: 80px;
       @include mq-down(md) {
-        font-size: 60px;
+        font-size: 64px;
       }
     }
+
     .about_topic {
       display: flex;
       justify-content: center;
@@ -84,6 +88,7 @@
         align-items: center;
         margin-top: 0px;
       }
+
       .about_image {
         max-width: 300px;
         width: calc(300px + 50 * (100vw - 768px) / 172);
@@ -94,19 +99,27 @@
       }
 
       .about_textsection {
-        font-size: 20px;
+        font-size: max(20px);
         font-family: "源柔ゴシック";
-        width: 560px;
+        // max-width: 560px;
+        // width: calc(380px + 180 * (100vw - 768px) / 182);
         text-align: left;
         margin-left: 80px;
         @include mq-down(md) {
-          margin-right: 0px;
+          margin-left: 0px;
           margin-top: 80px;
+          justify-content: center;
           text-align: center;
         }
         .about-space {
           margin-bottom: 12px;
           line-height: 30px;
+          @include mq-down(md) {
+            margin-bottom: 32px;
+          }
+          .text_cut {
+            display: inline-block;
+          }
         }
       }
     }
@@ -123,12 +136,18 @@
 
   .info_section-container {
     padding: 160px 0px;
+    @include mq-down(md) {
+      padding: 80px 0px;
+    }
 
     .info_section-title {
       color: white;
       font-size: 80px;
       padding-bottom: 88px;
       text-align: center;
+      @include mq-down(md) {
+        font-size: 64px;
+      }
     }
   }
 }
