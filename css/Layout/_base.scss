@@ -149,6 +149,11 @@
         font-size: 64px;
       }
     }
+    .twitter-timeline {
+      @include mq-down(sm) {
+        width: 80%;
+      }
+    }
   }
 }
 
@@ -173,6 +178,15 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 36px;
+
+      .sns_twitter,
+      .sns_youtube,
+      .sns_instagram {
+        transition: 0.3s;
+        &:hover {
+          transform: translateX(2px) translateY(-2px);
+        }
+      }
     }
     .footer_copylight {
       color: white;

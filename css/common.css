@@ -694,6 +694,12 @@ template {
   }
 }
 
+@media screen and (max-width: 543px) {
+  .info_section .info_section-container .twitter-timeline {
+    width: 80%;
+  }
+}
+
 .footer_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,6 +742,20 @@ template {
   margin-bottom: 36px;
 }
 
+.footer_section .footer_section_container .sns_container .sns_twitter,
+.footer_section .footer_section_container .sns_container .sns_youtube,
+.footer_section .footer_section_container .sns_container .sns_instagram {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer_section .footer_section_container .sns_container .sns_twitter:hover,
+.footer_section .footer_section_container .sns_container .sns_youtube:hover,
+.footer_section .footer_section_container .sns_container .sns_instagram:hover {
+  -webkit-transform: translateX(2px) translateY(-2px);
+          transform: translateX(2px) translateY(-2px);
+}
+
 .footer_section .footer_section_container .footer_copylight {
   color: white;
   text-align: center;
@@ -761,20 +781,29 @@ template {
 
 .navbar_containar .navbar_title {
   height: 24px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.navbar_containar .navbar_title:hover {
+  -webkit-transform: translateX(1px) translateY(-1px);
+          transform: translateX(1px) translateY(-1px);
+  -webkit-box-shadow: 8px 8px 4px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 8px 8px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_containar .navbar_section-button {
   font-size: 16px;
 }
 
-.navbar_containar .navbar_section-button .navbar_rink {
+.navbar_containar .navbar_section-button .navbar_link {
   margin-left: 24px;
   color: #aaaaaa;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.navbar_containar .navbar_section-button .navbar_rink:hover {
+.navbar_containar .navbar_section-button .navbar_link:hover {
   color: white;
 }
 /*# sourceMappingURL=common.css.map */
