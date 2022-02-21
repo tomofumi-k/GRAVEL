@@ -12,9 +12,12 @@
 .works_section {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 160px 150px;
+
+  padding: 160px 0px;
   background: $bg-gray;
+  @include mq-down(md) {
+    padding: 80px 0px;
+  }
 
   .works_contaier {
     width: 79.167vw;
@@ -22,8 +25,11 @@
     .works_title {
       font-size: 80px;
       text-align: center;
-      @include mq-down(sm) {
+      @include mq-down(md) {
         font-size: 64px;
+      }
+      @include mq-down(sm) {
+        font-size: 52px;
       }
     }
 
@@ -55,62 +61,78 @@
 
 .about_section {
   display: flex;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
   width: 100%;
-  padding: 160px 150px;
+  padding: 160px 0px;
   background: $bg-bark;
   font-family: "amboy-black", "sans-serif";
+  @include mq-down(md) {
+    padding: 80px 0px;
+  }
 
   .about_container {
-    height: 546px;
     color: white;
-    @include mq-down(md) {
-      height: 660px;
-    }
+
     .about_title {
       font-size: 80px;
       @include mq-down(md) {
-        font-size: 60px;
+        font-size: 64px;
+      }
+      @include mq-down(sm) {
+        font-size: 52px;
       }
     }
 
     .about_topic {
       display: flex;
       justify-content: center;
+      align-items: center;
       margin-top: 120px;
       @include mq-down(md) {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         margin-top: 0px;
       }
-      .about_textsection {
-        width: 358px;
-        margin-right: calc(60px + 20 * (100vw - 768px) / 172);
-        @include mq-down(md) {
-          margin-right: 0px;
-        }
-        .about_text-titile {
-          font-size: 32px;
-          padding: 42px 0px;
-          @include mq-down(md) {
-            padding: 42px 0px 16px 0px;
-          }
-        }
-        .about_text-space {
-          padding-top: 36px;
-          padding-bottom: 12px;
-          @include mq-down(md) {
-            padding-top: 16px;
-          }
-        }
-      }
+
       .about_image {
-        max-width: 350px;
+        max-width: 300px;
         width: calc(300px + 50 * (100vw - 768px) / 172);
         @include mq-down(md) {
           margin-top: 80px;
           width: 350px;
+        }
+        @include mq-down(sm) {
+          margin-top: 80px;
+          width: 240px;
+        }
+      }
+
+      .about_textsection {
+        font-size: max(20px);
+        font-family: "源柔ゴシック";
+        // max-width: 560px;
+        // width: calc(380px + 180 * (100vw - 768px) / 182);
+        text-align: left;
+        margin-left: 80px;
+        @include mq-down(md) {
+          margin-left: 0px;
+          margin-top: 80px;
+          justify-content: center;
+          text-align: center;
+        }
+        @include mq-down(sm) {
+          font-size: 16px;
+        }
+        .about-space {
+          margin-bottom: 12px;
+          line-height: 30px;
+          @include mq-down(md) {
+            margin-bottom: 32px;
+          }
+          .text_cut {
+            display: inline-block;
+          }
         }
       }
     }
@@ -127,12 +149,31 @@
 
   .info_section-container {
     padding: 160px 0px;
+    width: 800px;
+    @include mq-down(lg) {
+      padding: 80px 0px;
+      width: 600px;
+    }
+    @include mq-down(md) {
+      padding: 80px 0px;
+      width: 300px;
+    }
+    @include mq-down(xs) {
+      padding: 80px 0px;
+      width: 300px;
+    }
 
     .info_section-title {
       color: white;
       font-size: 80px;
       padding-bottom: 88px;
       text-align: center;
+      @include mq-down(md) {
+        font-size: 64px;
+      }
+      @include mq-down(sm) {
+        font-size: 52px;
+      }
     }
   }
 }
@@ -158,6 +199,15 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 36px;
+
+      .sns_twitter,
+      .sns_youtube,
+      .sns_instagram {
+        transition: 0.3s;
+        &:hover {
+          transform: translateX(2px) translateY(-2px);
+        }
+      }
     }
     .footer_copylight {
       color: white;

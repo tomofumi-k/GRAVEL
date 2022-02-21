@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -484,9 +485,14 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  padding: 160px 150px;
+  padding: 160px 0px;
   background: #565b66;
+}
+
+@media screen and (max-width: 767px) {
+  .works_section {
+    padding: 80px 0px;
+  }
 }
 
 .works_section .works_contaier {
@@ -498,9 +504,15 @@ template {
   text-align: center;
 }
 
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 767px) {
   .works_section .works_contaier .works_title {
     font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .works_section .works_contaier .works_title {
+    font-size: 52px;
   }
 }
 
@@ -549,25 +561,24 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   width: 100%;
-  padding: 160px 150px;
+  padding: 160px 0px;
   background: #3f424a;
   font-family: "amboy-black", "sans-serif";
 }
 
-.about_section .about_container {
-  height: 546px;
-  color: white;
+@media screen and (max-width: 767px) {
+  .about_section {
+    padding: 80px 0px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  .about_section .about_container {
-    height: 660px;
-  }
+.about_section .about_container {
+  color: white;
 }
 
 .about_section .about_container .about_title {
@@ -576,7 +587,13 @@ template {
 
 @media screen and (max-width: 767px) {
   .about_section .about_container .about_title {
-    font-size: 60px;
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .about_section .about_container .about_title {
+    font-size: 52px;
   }
 }
 
@@ -587,15 +604,18 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 120px;
 }
 
 @media screen and (max-width: 767px) {
   .about_section .about_container .about_topic {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -603,41 +623,8 @@ template {
   }
 }
 
-.about_section .about_container .about_topic .about_textsection {
-  width: 358px;
-  margin-right: calc(60px + 20 * (100vw - 768px) / 172);
-}
-
-@media screen and (max-width: 767px) {
-  .about_section .about_container .about_topic .about_textsection {
-    margin-right: 0px;
-  }
-}
-
-.about_section .about_container .about_topic .about_textsection .about_text-titile {
-  font-size: 32px;
-  padding: 42px 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .about_section .about_container .about_topic .about_textsection .about_text-titile {
-    padding: 42px 0px 16px 0px;
-  }
-}
-
-.about_section .about_container .about_topic .about_textsection .about_text-space {
-  padding-top: 36px;
-  padding-bottom: 12px;
-}
-
-@media screen and (max-width: 767px) {
-  .about_section .about_container .about_topic .about_textsection .about_text-space {
-    padding-top: 16px;
-  }
-}
-
 .about_section .about_container .about_topic .about_image {
-  max-width: 350px;
+  max-width: 300px;
   width: calc(300px + 50 * (100vw - 768px) / 172);
 }
 
@@ -646,6 +633,52 @@ template {
     margin-top: 80px;
     width: 350px;
   }
+}
+
+@media screen and (max-width: 543px) {
+  .about_section .about_container .about_topic .about_image {
+    margin-top: 80px;
+    width: 240px;
+  }
+}
+
+.about_section .about_container .about_topic .about_textsection {
+  font-size: 20px;
+  font-family: "源柔ゴシック";
+  text-align: left;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_textsection {
+    margin-left: 0px;
+    margin-top: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .about_section .about_container .about_topic .about_textsection {
+    font-size: 16px;
+  }
+}
+
+.about_section .about_container .about_topic .about_textsection .about-space {
+  margin-bottom: 12px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_section .about_container .about_topic .about_textsection .about-space {
+    margin-bottom: 32px;
+  }
+}
+
+.about_section .about_container .about_topic .about_textsection .about-space .text_cut {
+  display: inline-block;
 }
 
 .info_section {
@@ -665,6 +698,28 @@ template {
 
 .info_section .info_section-container {
   padding: 160px 0px;
+  width: 800px;
+}
+
+@media screen and (max-width: 1023px) {
+  .info_section .info_section-container {
+    padding: 80px 0px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info_section .info_section-container {
+    padding: 80px 0px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .info_section .info_section-container {
+    padding: 80px 0px;
+    width: 300px;
+  }
 }
 
 .info_section .info_section-container .info_section-title {
@@ -672,6 +727,18 @@ template {
   font-size: 80px;
   padding-bottom: 88px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .info_section .info_section-container .info_section-title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .info_section .info_section-container .info_section-title {
+    font-size: 52px;
+  }
 }
 
 .footer_section {
@@ -716,12 +783,27 @@ template {
   margin-bottom: 36px;
 }
 
+.footer_section .footer_section_container .sns_container .sns_twitter,
+.footer_section .footer_section_container .sns_container .sns_youtube,
+.footer_section .footer_section_container .sns_container .sns_instagram {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer_section .footer_section_container .sns_container .sns_twitter:hover,
+.footer_section .footer_section_container .sns_container .sns_youtube:hover,
+.footer_section .footer_section_container .sns_container .sns_instagram:hover {
+  -webkit-transform: translateX(2px) translateY(-2px);
+          transform: translateX(2px) translateY(-2px);
+}
+
 .footer_section .footer_section_container .footer_copylight {
   color: white;
   text-align: center;
 }
 
 .navbar_containar {
+  padding: 16px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,25 +811,40 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 50px;
-  background-color: #272727;
-  color: #fff;
+  background-color: #707070;
   font-family: "amboy-black", "sans-serif";
   font-weight: bolder;
 }
 
 .navbar_containar .navbar_title {
-  height: 42px;
-  padding: 5px 0px 8px 14px;
+  height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar_containar .navbar_title:hover {
+  -webkit-transform: translateX(1px) translateY(-1px);
+          transform: translateX(1px) translateY(-1px);
+  -webkit-box-shadow: -8px 8px 4px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: -8px 8px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_containar .navbar_section-button {
-  padding: 14px 14px 14px 0px;
   font-size: 16px;
 }
 
-.navbar_containar .navbar_section-button a {
-  padding-left: 24px;
+.navbar_containar .navbar_section-button .navbar_link {
+  margin-left: 24px;
+  color: #aaaaaa;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar_containar .navbar_section-button .navbar_link:hover {
+  color: white;
 }
 /*# sourceMappingURL=common.css.map */
