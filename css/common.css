@@ -510,6 +510,12 @@ template {
   }
 }
 
+@media screen and (max-width: 543px) {
+  .works_section .works_contaier .works_title {
+    font-size: 52px;
+  }
+}
+
 .works_section .works_contaier .works_image-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,6 +591,12 @@ template {
   }
 }
 
+@media screen and (max-width: 543px) {
+  .about_section .about_container .about_title {
+    font-size: 52px;
+  }
+}
+
 .about_section .about_container .about_topic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -623,6 +635,13 @@ template {
   }
 }
 
+@media screen and (max-width: 543px) {
+  .about_section .about_container .about_topic .about_image {
+    margin-top: 80px;
+    width: 240px;
+  }
+}
+
 .about_section .about_container .about_topic .about_textsection {
   font-size: 20px;
   font-family: "源柔ゴシック";
@@ -638,6 +657,12 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .about_section .about_container .about_topic .about_textsection {
+    font-size: 16px;
   }
 }
 
@@ -673,11 +698,27 @@ template {
 
 .info_section .info_section-container {
   padding: 160px 0px;
+  width: 800px;
+}
+
+@media screen and (max-width: 1023px) {
+  .info_section .info_section-container {
+    padding: 80px 0px;
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .info_section .info_section-container {
     padding: 80px 0px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .info_section .info_section-container {
+    padding: 80px 0px;
+    width: 300px;
   }
 }
 
@@ -695,8 +736,8 @@ template {
 }
 
 @media screen and (max-width: 543px) {
-  .info_section .info_section-container .twitter-timeline {
-    width: 80%;
+  .info_section .info_section-container .info_section-title {
+    font-size: 52px;
   }
 }
 
@@ -781,15 +822,15 @@ template {
 
 .navbar_containar .navbar_title {
   height: 24px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar_containar .navbar_title:hover {
   -webkit-transform: translateX(1px) translateY(-1px);
           transform: translateX(1px) translateY(-1px);
-  -webkit-box-shadow: 8px 8px 4px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 8px 8px 4px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -8px 8px 4px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: -8px 8px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_containar .navbar_section-button {

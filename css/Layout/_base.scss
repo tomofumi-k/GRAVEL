@@ -28,6 +28,9 @@
       @include mq-down(md) {
         font-size: 64px;
       }
+      @include mq-down(sm) {
+        font-size: 52px;
+      }
     }
 
     .works_image-section {
@@ -76,6 +79,9 @@
       @include mq-down(md) {
         font-size: 64px;
       }
+      @include mq-down(sm) {
+        font-size: 52px;
+      }
     }
 
     .about_topic {
@@ -96,6 +102,10 @@
           margin-top: 80px;
           width: 350px;
         }
+        @include mq-down(sm) {
+          margin-top: 80px;
+          width: 240px;
+        }
       }
 
       .about_textsection {
@@ -110,6 +120,9 @@
           margin-top: 80px;
           justify-content: center;
           text-align: center;
+        }
+        @include mq-down(sm) {
+          font-size: 16px;
         }
         .about-space {
           margin-bottom: 12px;
@@ -136,8 +149,18 @@
 
   .info_section-container {
     padding: 160px 0px;
+    width: 800px;
+    @include mq-down(lg) {
+      padding: 80px 0px;
+      width: 600px;
+    }
     @include mq-down(md) {
       padding: 80px 0px;
+      width: 300px;
+    }
+    @include mq-down(xs) {
+      padding: 80px 0px;
+      width: 300px;
     }
 
     .info_section-title {
@@ -148,10 +171,8 @@
       @include mq-down(md) {
         font-size: 64px;
       }
-    }
-    .twitter-timeline {
       @include mq-down(sm) {
-        width: 80%;
+        font-size: 52px;
       }
     }
   }
